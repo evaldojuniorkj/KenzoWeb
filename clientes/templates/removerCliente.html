@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block titulo%}
+Remover de Cliente
+{% endblock %}
+
+{% block tituloPagina %}
+Remover de Cliente
+{% endblock %}
+
+{% block conteudo %}
+    <form method="POST">{% csrf_token %}
+        <h4>Comfirmar a exclusao do Cliente: {{cliente}} ?</h4>
+        <br>
+        <button type="submit" class="btn btn-outline-primary">Remover</button>
+    </form>
+{% endblock %}
